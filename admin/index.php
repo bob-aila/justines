@@ -127,7 +127,7 @@ $(document).ready(function() {
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	          </button>
-	          <a class="navbar-brand" href="../admin/index.php"><img src="\justines/img/logo2.png" height="42px" width="170px"></a>
+	          <a class="navbar-brand" href="../admin/index.php"><img src="img/logo2.png" height="42px" width="170px"></a>
 	        </div>
 	        <div class="collapse navbar-collapse">
 	          <ul class="nav navbar-nav">
