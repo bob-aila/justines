@@ -39,7 +39,7 @@ $departure = $_SESSION['to'];
             <div class="panel-body">  
              <form action="" method="POST">
                  <?php //include'navigator.php';?>
-                 <center><img src="\justines/img/logo1.png" height="100px" width="100px"></center>
+                 <center><img src="../img/logo1.png" height="100px" width="100px"></center>
                   <h3 align="center">Your Booking Cart</h3>
                   <table class="table table-hover">
                   <thead>
