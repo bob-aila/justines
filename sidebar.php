@@ -98,7 +98,7 @@ require_once 'receiver.php';
 					}
 						?>
 				
-				 <br><form name="clock">
+				 <form name="clock">
 			                  
 					  <input  class="form-control" id="trans" type="label"  name="face" value="">
 				 </form>
