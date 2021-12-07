@@ -6,14 +6,12 @@ if(!isset($_SESSION))
 require_once 'receiver.php';
 ?>
 <!--Side bar-->
-			<div class="row row-offcanvas row-offcanvas-right">
+			
 		<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-			<div class="sidebar-nav">
 		   <div class="panel panel-primary">
-		   
-			 <div class="panel-heading">Rooms Reservation</div>
+			 <div class="panel-heading">Rooms Reservation</div><br>
 			  <div class="panel-body">	
-						   <form  method="POST" action="receiver.php">
+						   <form  method="POST" action="#.php">
 								<div class="col-xs-12 col-sm-12">
 
 					            	<div class="form-group">
@@ -54,10 +52,10 @@ require_once 'receiver.php';
 					
 					<?php if(!isset($_SESSION['guest_id'])){
 
-				echo ' <div class="panel-heading">User Login</div>
+				     echo ' <div class="panel-heading">User Login</div>
 					   <div class="panel-body">	
-					   <form  method="POST" action="receiver.php">
-					    <div class="col-xs-12 col-sm-12">
+						   <form  method="POST" action="#.php">
+								<div class="col-xs-12 col-sm-12">
 
 					            	<div class="form-group">
 					            		<div class="row">
@@ -99,22 +97,22 @@ require_once 'receiver.php';
 
 					}
 						?>
-				</div>
 				
-				 <form name="clock">
+				 <br><form name="clock">
 			                  
-					  <input  class="form-control" id="trans" type="label"  value="">
-				</form>
+					  <input  class="form-control" id="trans" type="label"  name="face" value="">
+				 </form>
 						
 
-		    <hr>
+		          <hr>
 			
 
 	
 
 		
-	</div>
+	        </div>
 			<!--/.well --> 
-		</div>
+</div>
 		<!--/span-->
 		<!--End of Side bar-->
+
