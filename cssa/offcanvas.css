@@ -15,18 +15,27 @@ footer {
  * --------------------------------------------------
  */
 @media screen and (max-width: 768px) {
+  body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 10px;
+    line-height: 1;
+    color: #333;
+}
   .row-offcanvas {
     position: relative;
     -webkit-transition: all 0.25s ease-out;
     -moz-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
   }
+  .media-object {
+    width: 100%;
+}
 
   .row-offcanvas-right
   .sidebar-offcanvas {
     right: -50%; /* 6 columns */
   }
-
+  
   .row-offcanvas-left
   .sidebar-offcanvas {
     left: -50%; /* 6 columns */
@@ -39,22 +48,33 @@ footer {
   .row-offcanvas-left.active {
     left: 50%; /* 6 columns */
   }
-    .container{
-    float: left;
+  .sidebar-nav{
+    width: 10;
   }
+  .panel-primary {
+    display: block;
+    justify-content: space-between;
+    width: 45%;
+    float: left;
+    margin: 4px;
+}
+  .panel-heading {
+    width: 100%;
+    height: 30px;
+}
   .media-object{
     width: 100%;
   }
   .well {
-    padding: 2px;
+    padding: 1px;
     margin-bottom: 20px;
     background-color: #f5f5f5;
     border: 1px solid #e3e3e3;
     border-radius: 4px;
 }
   .sidebar-offcanvas {
-    position: absolute;
+    position: relative;
     top: 0;
-    width: 50%; /* 6 columns */
+    width: 100%; /* 6 columns */
   }
 }
