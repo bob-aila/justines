@@ -30,7 +30,9 @@ footer {
   .media-object {
     width: 100%;
 }
-
+ .navbar-brand{
+    width: 60%;
+  }
   .row-offcanvas-right
   .sidebar-offcanvas {
     right: -50%; /* 6 columns */
