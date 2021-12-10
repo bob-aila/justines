@@ -15,13 +15,6 @@
     <script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>
     <script type="text/javascript" language="javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" language="javascript" src="js/bootstrap-modal.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	$('.toggle-modal').click(function(){
-		$('#logout').modal('toggle');
-	}); 
-});
-</script>
 
 <!-- Custom styles for this template -->
 
@@ -279,4 +272,11 @@ $(document).ready(function(){
 </div>
 <!--/.container-->
 </body>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.toggle-modal').click(function(){
+		$('#logout').modal('toggle');
+	}); 
+});
+</script>
 </html>
