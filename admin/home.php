@@ -8,7 +8,6 @@ if (!isset($_SESSION['name'])) {
 	header('Location: ../admin/index.php');
 	exit;
 }
- include 'modal.php'; 
 ?>
 <div class="container">
   <p></p>
