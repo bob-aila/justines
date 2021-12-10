@@ -33,89 +33,8 @@ include_once("../includes/initialize.php");
 <script type="text/javascript" language="javascript" src="../jsa/bootstrap-modal.js"></script>
 <script type="text/javascript" src="../jsa/bootstrap-datetimepicker.js" charset="UTF-8"></script>
 <script type="text/javascript" src="../jsa/locales/bootstrap-datetimepicker.uk.js" charset="UTF-8"></script>
+<link href="../cssa/offcanvas.css" rel="stylesheet">
 </head>
-<script type="text/javascript">
-//execute if all html elemen has been completely loaded
-$(document).ready(function(){
-
-//specify class name of a specific element. click event listener--
-$('.cls_btn').click(function(){
-//access the id of the specific element that has been click	
-var id = $(this).attr('id');
-//to debug every value of element,variable, object ect...
-console.log($(this).attr('id'));
-
-//execute a php file without reloading the page and manipulate the php responce data
-$.ajax({
-
-  type: "POST",
-  //the php file that contain a mysql query
-  url: "some.php",
-  //submit parameter
-  data: { id:id,name:"kevin" }
-})
-//.done means will execute if the php file has done all the processing(ex: query)
-/*  .done(function( msg ) {
-  	//decode JSON from PHP file response
-  	var result = JSON.parse(msg);
-
-  	console.log(this);
-    
-  	//apply the value to each element
-    $('#display #infoid').html(result[0].member_id);
-    $('#display #infoname').html(result[0].fName+" "+result[0].lName);
-    $('#display #Email').html(result[0].email);
-    $('#display #Gender').html(result[0].gender);
-    $('#display #bday').html(result[0].bday);
-      });*/
-
-});
-
-});
-</script>
-
-<script type="text/javascript">
-$(document).ready(function(){
-	$('.toggle-modal').click(function(){
-		$('#logout').modal('toggle');
-	}); 
-});
-</script>
-<script type="text/javascript">
-$(document).ready(function(){
-	$('.toggle-modal-reserve').click(function(){
-		$('#reservation').modal('toggle');
-	}); 
-});
-
-
-</script>
-
-
-<script type="text/javascript" charset="utf-8">
-$(document).ready(function() {
-    var t = $('#example').DataTable( {
-        "columnDefs": [ {
-            "searchable": false,
-            "orderable": false,
-            "targets": 1
-        } ],
-        //vertical scroll
-         "scrollY":        "400px",
-        "scrollCollapse": true,
-        //ordering start at column 2
-       "order": [[ 2, 'asc' ]]
-    } );
- 
-    t.on( 'order.dt search.dt', function () {
-        t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
-            cell.innerHTML = i+1;
-        } );
-    } ).draw();
-} );
-    </script>
-    <link href="..//css/offcanvas.css" rel="stylesheet">
-
 <body>
 <!--Header-->
 
@@ -221,6 +140,46 @@ echo '<hr>';
 </div>
 <!--/.container-->
 </body>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.toggle-modal').click(function(){
+		$('#logout').modal('toggle');
+	}); 
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.toggle-modal-reserve').click(function(){
+		$('#reservation').modal('toggle');
+	}); 
+});
+
+
+</script>
+
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+    var t = $('#example').DataTable( {
+        "columnDefs": [ {
+            "searchable": false,
+            "orderable": false,
+            "targets": 1
+        } ],
+        //vertical scroll
+         "scrollY":        "400px",
+        "scrollCollapse": true,
+        //ordering start at column 2
+       "order": [[ 2, 'asc' ]]
+    } );
+ 
+    t.on( 'order.dt search.dt', function () {
+        t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+            cell.innerHTML = i+1;
+        } );
+    } ).draw();
+} );
+    </script>
 </html>
  <script type="text/javascript">
 	$('.start').datetimepicker({
