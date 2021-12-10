@@ -42,7 +42,7 @@ define('ADMIN_INDEX_PATH', $_SERVER['SERVER_NAME']);
 define( 'SEP', DIRECTORY_SEPARATOR );
 ECHO WEB_ROOT;
 //require_once (WEB_ROOT.'backendTemplate.php');*/
-  include '../modal.php';
+  //include '../modal.php';
 require_once '../themes/backendTemplate.php';
 ?>
 
